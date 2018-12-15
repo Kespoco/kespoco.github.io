@@ -9,4 +9,4 @@ This project is licensed under the Unlicense - see the [LICENSE.md](LICENSE.md) 
 
 ## Acknowledgments
 
-* All the hard work courtesy to [TEMPLATED](https://www.google.com "Google's Homepage")
+* All the hard work courtesy to [TEMPLATED](https://templated.co/)
