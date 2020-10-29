@@ -19,6 +19,10 @@ a {
     width: 80%;
 }
 
+.animated-left{
+    animation-direction: reverse;
+}
+
 /* Arrow --------------- */
 .arrow {
     border: solid #ffffff;
@@ -99,4 +103,76 @@ a {
     top: -1vh;
 }
 
+.landing-nav #link-arrow{
+    display: inline-block;
+}
+
+.landing-nav .delayed{
+    animation-delay: 0.1s;
+}
+
+.landing-nav #gallery-link:hover #link-arrow, .landing-nav #contact-link:hover #link-arrow, .landing-nav #about-link:hover #link-arrow{
+    animation-name: slide-fade;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.landing-nav #gallery-link:hover, .landing-nav #contact-link:hover, .landing-nav #about-link:hover{
+    animation-name: pulse;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 /* Gallery page =============================================================== */
+
+/* Animations =============================================================== */
+
+/* Light fade --------------------------------- */
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.pulse:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/* Slide-fade --------------------------------- */
+@keyframes slide-fade {
+    0% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+    33.3% {
+        opacity: 0;
+        transform: translateX(10px) scale(0.98);
+    }
+    66.6% {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.slide-fade:hover{
+    animation-name: slide-fade;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
